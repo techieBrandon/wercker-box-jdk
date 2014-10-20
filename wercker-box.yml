@@ -14,21 +14,21 @@ packages:
   - git@1.7.9.5
   - gradle@2.1
   - make@3.81
-  - openjdk-7-jdk
+  - openjdk-7-jdk@1.7.0_65
 script: |
   source /etc/lsb-release
   sudo apt-get update -qq
-  sudo apt-get install -qq curl python-software-properties
+  sudo apt-get install -qq git curl python-software-properties
   sudo add-apt-repository -y ppa:cwchien/gradle
   sudo apt-get update -qq
   sudo apt-get install -qq openjdk-7-jdk
   sudo apt-get install -qq gradle-2.1
   sudo apt-get install -qq make
   sudo apt-get install -qq doxygen
-  sudo apt-get install -qq git
+  git --version
+  curl --version
   java -version
   javac -version
+  gradle --version
   make --version | head -n1
-  curl --version
   doxygen --version
-  git --version
