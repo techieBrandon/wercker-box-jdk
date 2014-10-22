@@ -35,3 +35,5 @@ script: |
   make --version | head -n1
   doxygen --version
   s3cmd --version
+  echo 'access_key=$S3CMD_ACCESS_KEY' > ~/.s3cfg
+  echo 'secret_key=$S3CMD_SECRET_KEY' >> ~/.s3cfg
