@@ -1,5 +1,5 @@
 name: jdk
-version: 0.0.1
+version: 0.0.2
 type: main
 platform: ubuntu@12.04
 description: Wercker box for projects that require an OpenJDK 7 toolchain.
