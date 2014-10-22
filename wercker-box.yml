@@ -18,6 +18,7 @@ packages:
   - s3cmd@1.1.0-beta3
 script: |
   source /etc/lsb-release
+  sudo sh -c 'echo "deb http://archive.ubuntu.com/ubuntu precise-backports main restricted universe multiverse" > /etc/apt/sources.list.d/backports.list'
   sudo apt-get update -qq
   sudo apt-get install -qq git curl python-software-properties
   sudo add-apt-repository -y ppa:cwchien/gradle
