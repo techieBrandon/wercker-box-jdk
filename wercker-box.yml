@@ -18,6 +18,8 @@ packages:
   - s3cmd@1.1.0-beta3
 script: |
   source /etc/lsb-release
+  sudo cat /etc/apt/sources.list
+  sudo ls -l /etc/apt/sources.list.d/
   sudo sh -c 'echo "deb http://archive.ubuntu.com/ubuntu precise-backports main restricted universe multiverse" > /etc/apt/sources.list.d/backports.list'
   sudo apt-get update -qq
   sudo apt-get install -qq git curl python-software-properties
